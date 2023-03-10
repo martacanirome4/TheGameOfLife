@@ -1,6 +1,6 @@
 package aplicacion;
 
-import dominio.Tablero;
+import dominio.*;
 
 import java.util.concirrent.TimeUnit;
 import java.lang.InterruptedException;

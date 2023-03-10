@@ -1,12 +1,13 @@
 package dominio;
 // Tablero de El Juego de la Vida
 
-public class Tablero{
+public class Tablero {
     private static int DIMENSION = 30;
     // matriz que representa el estado actual del tablero
-    private int[][] estadoActual;
+    private int[][] estadoActual = new int[DIMENSION+2][DIMENSION+2];
     // matriz que representa el estado siguiente del tablero
-    private int[][] estadoSiguiente = new int[DIMENSION][DIMENSION];
+    // le indicamos que es 30x30 pero realmente es 32x32 para no salirnos del tablero al recorrer y calcular en límites
+    private int[][] estadoSiguiente = new int[DIMENSION+2][DIMENSION+2];
 
     // lee el estado inicial de un fichero llamado 'matriz'
     public void leerEstadoActtual(){
