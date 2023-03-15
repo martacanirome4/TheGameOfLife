@@ -1,8 +1,8 @@
 package aplicacion;
 
-import dominio.*;
+import dominio.Tablero;
 
-import java.util.concirrent.TimeUnit;
+import java.util.concurrent.TimeUnit;
 import java.lang.InterruptedException;
 
 public class Principal {
