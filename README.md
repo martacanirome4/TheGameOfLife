@@ -1,5 +1,5 @@
 # TheGameOfLife
-Este es un proyecto de implementación del Juego de la Vida en Java.
+Este es un proyecto de implementación del Juego de la Vida de John Conway (1970) en Java.
 Este juego es un autómata celular, que consiste en una cuadrícula de células (fichero matriz 30x30) que pueden estar vivas o muertas.
 En cada iteración, el estado de cada célula cambia de acuerdo con las reglas del juego.
 Se genera el estado de las células en cada iteración mediante el método probabilístico de Montecarlo.
