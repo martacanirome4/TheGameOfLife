@@ -20,6 +20,12 @@ public class Tablero {
      * La secuencia de ceros y unos del fichero es guardada en ‘estadoActual‘ y, utilizando las reglas del juego
      * de la vida, se insertan los ceros y unos correspondientes en ‘estadoSiguiente‘
      */
+    /**
+     * @param args
+     * @return result
+     * @throws FileNotFoundException
+     * @throws InterruptedException
+     */
     public void leerEstadoActual(){
         try {
             Scanner file = new Scanner(new File("matriz.txt"));
@@ -64,6 +70,15 @@ public class Tablero {
      * se insertan los ceros y unos correspondientes en ‘estadoSiguiente‘.
      * Transita al estado siguiente según las reglas del juego.
      * **/
+    /**
+     * @param estado_actual
+     * @param estado_siguiente
+     * @param dimension
+     * @return estado_siguiente
+     * @throws InterruptedException
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
     public void generarEstadoActualPorMontecarlo(){
 
         for (int i=0; i<dimension; i++) {
